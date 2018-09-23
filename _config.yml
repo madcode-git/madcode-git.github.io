@@ -1,55 +1,47 @@
-# Jekyll configuration
+# Site settings
+title: HyG
+brief-intro: Front-end Dev Engineer
+baseurl: ""
+url: "https://gaohaoyang.github.io"
+
+permalink: /:year/:month/:day/:title/
+
+# other links
+twitter_username: gaohaoyang126
+facebook_username: gaohaoyang.water
+github_username:  Gaohaoyang
+email: gaohaoyang126@126.com
+weibo_username: 3115521wh
+zhihu_username: gaohaoyang
+linkedIn_username: gaohaoyang
+dribbble_username:
+
+description_footer: 本站记录我前端之旅的沿途风景！
+
+# Comments
+disqus_shortname: gaohaoyang
+
+# statistic analysis 统计代码
+# 百度统计 id，将统计代码替换为自己的百度统计id，即
+# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
+# xxxxx字符串
+baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
+google_analytics_id: UA-72449510-4 # google 分析追踪id
+
+# Build settings
 markdown: kramdown
-highlighter: rouge
-paginate: 15 # it will paginate after this number
-language: 'en-uk'
 
-baseurl: /
-production_url: https://madcode-git.github.io/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Website info
-title: RayhanBD
-description: The professional publishing platform
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+# url
+category_dir: category/
+tag_dir: tag/
 
-# Social info
-navigation: True
-subscribers: True
-twitter: tryghost
-facebook: ghost
-disqus: False
-disqus_shortname: jekyller
-google_analytics: 
+# excerpt
+excerpt_separator: "\n\n\n\n"
 
-# Permalinks
-permalink: /:title
-permalink: /author/:author
-permalink: /tag/:tag
-
-# gems and other configs
-plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jekyll-feed]
-
-feed:
-  path: feed.xml
-
-exclude:
-  - assets/css
-  - node_modules
-  - vendor
-  - .travis.yml
-  - Gemfile
-  - Gemfile.lock
-  - GHOST.txt
-  - gulpfile.js
-  - LICENSE
-  - package.json
-  - Rakefile
-  - README.md
-  - script.py
-  - changelog.md
-  - "*.Rmd"
-  - .git*
+# paginate
+gems: [jekyll-paginate]
+paginate: 6
