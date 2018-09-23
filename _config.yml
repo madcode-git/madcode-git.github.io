@@ -1,47 +1,43 @@
-# Site settings
-title: HyG
-brief-intro: Front-end Dev Engineer
-baseurl: ""
-url: "https://gaohaoyang.github.io"
+# Site Settings
+title: Jekflix | A theme for Jekyll
+email: youremail@xyz.com
+description: Some text about your blog.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://madcode-git.github.io" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
 
-permalink: /:year/:month/:day/:title/
+# User Settings
+username: Jekflix
+user_description: Some text about you.
+disqus_username: disqus_username
 
-# other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
-weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
-dribbble_username:
-
-description_footer: 本站记录我前端之旅的沿途风景！
-
-# Comments
-disqus_shortname: gaohaoyang
-
-# statistic analysis 统计代码
-# 百度统计 id，将统计代码替换为自己的百度统计id，即
-# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
-# xxxxx字符串
-baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
-google_analytics_id: UA-72449510-4 # google 分析追踪id
+# Social Media
+# Remove the item if you don't need it
+github_username: github_username
+facebook_username: facebook_username
+twitter_username: twitter_username
+instagram_username: instagram_username
+linkedin_username: linkedin_username
+medium_username: medium_username
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: /:title/
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+# Plugins
+gems:
+  - jemoji
 
-# url
-category_dir: category/
-tag_dir: tag/
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
 
-# excerpt
-excerpt_separator: "\n\n\n\n"
-
-# paginate
-gems: [jekyll-paginate]
-paginate: 6
+# Exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
